@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+font-family: 'Rubik', sans-serif;
+;
+background: url(./black-panther-wakanda-forever-wallpapers.jpg);
+background-repeat: repeat;
+}
+
+.contenedor{
+padding: 60px 0;
+width: 90%;
+max-width: 1000px;
+margin: auto;
+overflow: hidden;
+}
+
+.titulo{
+color: #fff;
+font-size: 30px;
+text-align: center;
+margin-bottom: 60px;
+}
+        /* header */
+		header{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+			transition: 0.7s;
+			padding: 30px 20px;
+			z-index: 10;
+		}
+		header.abajo{
+			background: #fff;
+			padding: 15px 20px;
+		}
+		header .logo{
+			position: relative;
+			color: #fff;
+			font-weight: bold;
+			font-size: 2em;
+			letter-spacing: 2px;
+			transition: 1.5s;
+			text-decoration: none;
+		}
+		nav{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		header ul{
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		header ul li{
+			list-style: none;
+		}
+
+		header ul li a{
+			position: relative;
+			font-family: helvetica;
+			margin: 0 15px;
+			text-decoration: none;
+			color: #fff;
+			letter-spacing: 2px;
+			font-weight: 600;
+			transition: 0.7s;
+		}
+
+		.zona1{
+			position: relative;
+			width: 100%;
+			height: 100vh;
+            background: url(./1288612.jpg);
+			background-size: cover;
+			background-position: center center;
+		}
+		header.abajo .logo,
+		header.abajo ul li a{
+			color:#192d6c;
+        	}
+iframe{
+    width: 100%;
+	height: 100%;
+    padding-left: 10%;
+	padding-right: 10%;
+}
