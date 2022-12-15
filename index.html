@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./main.js" type="module"></script>
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./app.css">
+    <link rel="stylesheet" href="./webapp/style.css">
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Nav</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Nav</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#singupmodal">Inciar</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- SingIn Modal -->
+<div class="modal fade" id="singupmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="container">
+          <div class="forms-container">
+            <div class="signin-signup">
+              <form action="#" class="sign-in-form" id="login-form">
+                <h2 class="title">Inicia sesión</h2>
+                <div class="input-field">
+                  
+                  <i class="fas fa-user"></i>
+                  <input type="text" placeholder="Usuario" id="login-email"/>
+                </div>
+                <div class="input-field">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" placeholder="Contraseña" id="login-password" />
+                </div>
+                <a onclick="window.location.href = './sidebar - copia - copia/inicio.html';" class="boton"><i><button>Iniciar</button></i></a>
+              </form>
+              <form action="#" class="sign-up-form" id="signup-form">
+                <h2 class="title">Registrate</h2>
+                <div class="input-field">
+                  <i class="fas fa-envelope"></i>
+                  <input type="email" placeholder="Correo" id="signup-email" />
+                </div>
+                <div class="input-field">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" placeholder="Contraseña" id="signup-password"/>
+                </div>
+                <a class="boton"><i><button>Registrate</button></i></a>
+                <!-- <p class="social-text">Registrate desde otra plataforma</p> -->
+                <div class="social-media">
+                  <!-- <a href="#" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                    <i class="fab fa-google"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a> -->
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="panels-container">
+            <div class="panel left-panel">
+              <div class="content">
+                <h3>Eres nuevo?</h3>
+                <p>
+                  Registrate completamente gratis en nuestra plataforma.
+                </p>
+                <button class="keloke" id="sign-up-btn">
+                  Registrate
+                </button>
+              </div>
+              <img src="img/sing up.png" class="image" alt="" />
+            </div>
+            <div class="panel right-panel">
+              <div class="content">
+                <h3>Ya tienes una cuenta?</h3>
+                <p>
+                  Inicia sesion y disfruta de nuestro contenido
+                </p>
+                <button class="keloke" id="sign-in-btn">
+                  Iniciar Sesión
+                </button>
+              </div>
+              <img src="img/sing in.png" class="image" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="singupmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="container">
+          <div class="forms-container">
+            <div class="signin-signup">
+              <form action="#" class="sign-in-form" id="login-form">
+                <h2 class="title">Inicia sesión</h2>
+                <div class="input-field">
+                  
+                  <i class="fas fa-user"></i>
+                  <input type="text" placeholder="Usuario" id="login-email"/>
+                </div>
+                <div class="input-field">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" placeholder="Contraseña" id="login-password" />
+                </div>
+                <a class="boton"><i><button>Iniciar</button></i></a>
+                <p class="social-text">Inicia sesión desde otras plataformas</p>
+                <div class="social-media">
+                  <a href="#" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                    <i class="fab fa-google"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </form>
+              <form action="#" class="sign-up-form" id="signup-form">
+                <h2 class="title">Registrate</h2>
+                <div class="input-field">
+                  <i class="fas fa-envelope"></i>
+                  <input type="email" placeholder="Correo" id="signup-email" />
+                </div>
+                <div class="input-field">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" placeholder="Contraseña" id="signup-password"/>
+                </div>
+                <a class="boton"><i><button>Registrate</button></i></a>
+                <!-- <p class="social-text">Registrate desde otra plataforma</p> -->
+                <div class="social-media">
+                  <!-- <a href="#" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                    <i class="fab fa-google"></i>
+                  </a>
+                  <a href="#" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a> -->
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div class="panels-container">
+            <div class="panel left-panel">
+              <div class="content">
+                <h3>Eres nuevo?</h3>
+                <p>
+                  Registrate completamente gratis en nuestra plataforma.
+                </p>
+                <button class="keloke" id="sign-up-btn">
+                  Registrate
+                </button>
+              </div>
+              <img src="img/sing up.png" class="image" alt="" />
+            </div>
+            <div class="panel right-panel">
+              <div class="content">
+                <h3>Ya tienes una cuenta?</h3>
+                <p>
+                  Inicia sesion y disfruta de nuestro contenido
+                </p>
+                <button class="keloke" id="sign-in-btn">
+                  Iniciar Sesión
+                </button>
+              </div>
+              <img src="img/sing in.png" class="image" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- banner-->
+
+<section class="inicio" id="inicio">
+
+    <div class="content">
+        <h3>La mejor <span> red social </span></h3>
+        <p>Noticias, música, series, películas y animes al alcence de tus manos</p>
+        <a href="#" class="btn">descargar</a>
+    </div>
+
+    <div class="image">
+        <img src="./images/World wide web_Flatline.png" alt="">
+    </div>
+
+</section>
+
+
+<!-- caracteristicas -->
+
+<section class="features" id="features">
+
+    <h1 class="heading">Carateristicas</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="./images/f-icon1.png" alt="">
+            <h3>Diseño innovador</h3>
+            <p>Dedicados a brindarte el mejor servicio con un diseño innovador adecuado para cualquier dispositivo y adaptado a tus necesidades.</p>
+            <a href="#" class="btn">Leer</a>
+        </div>
+
+        <div class="box">
+            <img src="./images/f-icon2.png" alt="">
+            <h3>Multicontenido</h3>
+            <p>Podras ver Peliculas, series y animes, además usar el chat con tus amigos al mismo tiempo, escuchar musica via stream y hacer post.</p>
+            <a href="#" class="btn">Leer</a>
+        </div>
+
+        <div class="box">
+            <img src="./images/f-icon3.png" alt="">
+            <h3>Interacciones amigables</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam minus recusandae autem, repellendus fugit quaerat provident voluptatum non officiis ratione.</p>
+            <a href="#" class="btn">Leer</a>
+        </div>
+
+    </div>
+
+</section>
+<!-- contacto -->
+
+
+
+<!-- footer -->
+
+<div class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Red Social</h3>
+            <p>Noticias, música, series, películas y animes al alcence de tus manos</p>
+        </div>
+
+        <div class="box">
+            <h3>links</h3>
+            <a href="#inicio">Inicio</a>
+            <a href="#features">Carateristicas</a>
+            <a href="#about">Nosotros</a>
+            <a href="#review">Opiniones</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+
+        <div class="box">
+            <h3>Siguenos</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">Discord</a>
+            <a href="#">twitter</a>
+        </div>
+
+        <div class="box">
+            <h3>Contacto</h3>
+            <div class="info">
+                <i class="fas fa-phone"></i>
+                <p> +123-456-7890 <br> +111-2222-333 </p>
+            </div>
+            <div class="info">
+                <i class="fas fa-envelope"></i>
+                <p> websocial@gmail.com <br> atcwebsocial@gmail.com </p>
+            </div>
+            <div class="info">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Lima, Perú</p>
+            </div>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> &copy; copyright @ 2023 by Certus </h1>
+</body>
+</html> 
